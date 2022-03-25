@@ -1,0 +1,289 @@
+:root {
+  --main-bg-color: #004687;
+}
+
+/* General */
+
+@media screen and (min-width : 640px) 
+{
+  div.header {
+      display: inline-flex;
+      padding-top: 5px;
+      height: 50px;
+      max-height: 50px;
+      width: 100%;
+      padding-top: 1%;
+      padding-bottom: 2%;
+  }
+
+  a[href].aanmelden{
+    text-align: center;
+    padding-bottom: 4px;
+    margin-right: 10px;
+    color: var(--main-bg-color);
+  }
+  a[href].login-button{
+    background-color: var(--main-bg-color);
+    text-overflow:  ellipsis;
+    border-radius: 6px;
+    min-width: 70px;
+    text-align: center;
+    font-size: 24px;
+    color:white;
+  }
+
+  a[href].clickable-button{
+    background-color: var(--main-bg-color);
+    text-overflow:  ellipsis;
+    min-width: 70px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3%;
+    font-size: 24px;
+    font-size: 2vw;
+    color:white;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  a[href].clickable-button2{
+    background-color: white;
+    border-radius: 6px;
+    padding: 3%;
+    font-size: 24px;
+    font-size: 2vw;
+    color: var(--main-bg-color);
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  img.header {
+    
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 0%;
+    vertical-align: middle;
+    height: 100%;
+    max-height: 70px;
+  }
+
+  div.header-center {
+    width: 500px;
+    height: 30px;
+    padding-top: 2%;
+    padding-left: 5%;
+    align-items: baseline;
+  }
+
+  div.header-right {
+    text-align: right;
+    margin-left: auto;
+    padding-right: 5%;
+    padding-top: 16px;
+    display: inline-flex;
+    align-items: baseline;
+  }
+
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  button.header {
+    float: center;
+    color: black;
+    text-align: right;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+    background: none;
+  }
+
+
+  .header a {
+    float: center;
+    color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+  .header a.active {
+    background-color: var(--main-bg-color);
+    color: white;
+  }
+
+  h1.middle {
+    padding-top: 30px;
+    text-align: center;
+    color: var(--main-bg-color);
+    font-size: 3vw;
+  }
+
+  div.middle {
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    display: table;
+  }
+
+  div.activity {
+    display: table-cell;
+    padding: 2%;
+    width: 25%;
+  }
+
+  .button{
+    font-size: 20px;
+    padding: 10px 10px;
+    background-color: var(--main-bg-color);
+    color: white;
+    border: none;
+  }
+
+  button.button2{
+    font-size: 18px;
+    border-radius: 15px;
+    margin-top: 3%;
+    margin-left: 25%;
+    padding: 15px 30px 15px 30px;
+    background-color: rgb(255, 255, 255);
+    color: var(--main-bg-color);
+    border: none;
+  }
+
+  .afbeelding{
+    vertical-align: middle;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  div.blue {
+    padding: 0;
+    background-color: var(--main-bg-color);
+    color: white;
+    display: table;
+    width: 100%;
+    max-height: 300px;
+  }
+
+  div.holder{
+    display: table-cell;
+    vertical-align: top;
+    text-align: left;
+    width: 0%;
+    padding-left: 10%;
+    white-space: normal;
+    padding-top: 4%;
+  }
+
+  h1.welcome{
+    font-size: 50px;
+    font-size: 5vw;
+    display: inline-flex;
+  }
+
+  h3.welcome{
+      font-size: 10px;
+      font-size: 1.7vw;
+      display: inline-flex;
+  }
+  div.imageholder{
+    display: table-cell;
+    vertical-align: top;
+    text-align: left;
+    width: 0%;
+  }
+
+  img.homepage{
+    width: 100%;
+    height: auto;
+  }
+  body.default {
+    margin: 0;
+  }
+
+  div.home{
+    padding-bottom: 80px;
+  }
+
+  div.footer{
+    display:inline-block;
+    background-color: var(--main-bg-color);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: table;
+    max-height: 1%;
+  }
+
+  div.contact{
+    padding-left:10%;
+    width: 24%;
+    display: table-cell;
+    font-size:1.5vw;
+
+    }
+
+  div.informatie{
+    vertical-align:left;
+    text-align: center;
+    width: 10%;
+    display: table-cell;
+    
+  }
+  div.social{
+    display:table-cell;
+    width:30%;
+    text-align:center;
+  }
+  img.informatie{
+    width: 100px;
+    padding-right: 5%;
+    width: 10%;
+  }
+
+  img.informatie-white{
+    width: 100px;
+    background-color: white;
+    width: 25%;
+    
+  }
+
+  img.informatie2{
+    width: 100px;
+    width: 15%;
+    padding-left: 4%;
+    }
+
+  h2.informatie{
+    padding-left: 35%;
+    text-align: left;
+    font-size:2vw;
+  }
+
+  img.social{
+    width: 15%;
+  }
+
+  div.dark-gray{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+  }
+
+  @font-face 
+  {
+      font-family: SF Pro Display;
+      src: url(//db.onlinewebfonts.com/t/0b51833ff62e4af8acb5fd3e2bf59e97.woff);
+  }
+
+  html *
+  {
+    font-family: "SF Pro Display";
+  }
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeelKampenBeweegt</title>
+    <link rel="global" href="global.css">
+    <link rel="stylesheet" href="activiteiten.css">
+    <script type="module" src="main.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="filter.js" defer></script>
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+    <img class="header" src="assets/logo.jpg" alt="Logo">
+    <div class="header-center">
+        <a href="index.html">Home</a>
+        <a href="activiteiten.html">Activiteiten</a>
+        <a href="#home">Sporten</a>
+        <a href="#home">Contact</a>
+        
+    </div>
+    <div class="header-right">
+        <a class="aanmelden" href="#home">Aanmelden</a>
+        <a class="login-button" href="#home">Log in</a>
+    </div>
+    
+</div>
+<!-- Activiteiten -->
+<div class="activiteiten">
+    <h1 class="titel">Overzicht activiteiten</h1>
+<!-- Filter -->
+<h2>Filters</h2>
+
+<div class="dropdown-align">
+<div class="dropdown" data-dropdown>
+    <button class="link" data-dropdown-button>Soort activiteit</button>
+        <div class="dropdown-menu information-grid">
+            <div class="dropdown-links">
+                <label for="cultuur">Cultuur
+                    <input class="filter" type="checkbox" id="cultuur" value="cultuur" onchange="filterSelection(value)">
+                </label>
+                <label for="sport">Sport
+                    <input class="filter" type="checkbox" id="sport" value="sport" onchange="filterSelection(value)">
+                </label>
+        </div>
+    </div>
+</div>
+
+<div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Sport</button>
+            <div class="dropdown-menu information-grid">
+                <div class="dropdown-links">
+                    <label for="Badminton">Badminton
+                        <input class="filter" type="checkbox" id="badminton" value="badminton" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Ballet">Ballet
+                        <input class="filter" type="checkbox" id="ballet" value="ballet" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Dance">Dance
+                        <input class="filter" type="checkbox" id="dance" value="dance" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Fitness">Fitness
+                        <input class="filter" type="checkbox" id="fitness" value="fitness" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Gymnastiek">Gymnastiek
+                        <input class="filter" type="checkbox" id="gymnastiek" value="gymnastiek" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Hockey">Hockey
+                        <input class="filter" type="checkbox" id="hockey" value="hockey" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Jazzdance">Jazzdance
+                        <input class="filter" type="checkbox" id="jazzdance" value="jazzdance" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Jiu-jitsu">Jiu-jitsu
+                        <input class="filter" type="checkbox" id="jiu-jitsu" value="jiu-jitsu" onchange="filterSelection(value)">
+                    </label>
+                    
+                </div>
+                
+                <div class="dropdown-links">
+                    <label for="Judo">Judo
+                        <input class="filter" type="checkbox" id="judo" value="judo" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Karate">Karate
+                        <input class="filter" type="checkbox" id="karate" value="karate" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Korfbal">Korfbal
+                        <input class="filter" type="checkbox" id="korfbal" value="korfbal" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Krav maga">Krav maga
+                        <input class="filter" type="checkbox" id="krav maga" value="krav maga" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Scouting">Scouting
+                        <input class="filter" type="checkbox" id="scouting" value="scouting" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Tai chi">Tai chi
+                        <input class="filter" type="checkbox" id="Tai chi" value="Tai chi" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Thai boksen">Thai boksen
+                        <input class="filter" type="checkbox" id="thai boksen" value="thai boksen" onchange="filterSelection(value)">
+                    </label>
+                </div>
+                
+                <div class="dropdown-links">
+                    <label for="Trampoline springen">Trampoline springen
+                        <input class="filter" type="checkbox" id="trampoline springen" value="trampoline springen" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Voetbal">Voetbal
+                        <input class="filter" type="checkbox" id="voetbal" value="voetbal" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Volleybal">Volleybal
+                        <input class="filter" type="checkbox" id="volleybal" value="volleybal" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Wandelsport">Wandelsport
+                        <input class="filter" type="checkbox" id="wandelsport" value="wandelsport" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Yoga">Yoga
+                        <input class="filter" type="checkbox" id="yoga" value="yoga" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Zaalvoetbal">Zaalvoetbal
+                        <input class="filter" type="checkbox" id="zaalvoetbal" value="zaalvoetbal" onchange="filterSelection(value)">
+                    </label>
+                    <label for="Zwemmen">Zwemmen
+                        <input class="filter" type="checkbox" id="zwemmen" value="zwemmen" onchange="filterSelection(value)">
+                    </label>
+                </div>
+                </div>
+</div>    
+
+
+    
+        <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Dag</button>
+            <div class="dropdown-menu information-grid">
+                <div class="dropdown-links">
+                    <label for="maandag">Maandag
+                        <input class="filter" type="checkbox" id="maandag" value="maandag" onchange="filterSelection(value)">
+                    </label>
+                    <label for="dinsdag">Dinsdag
+                        <input class="filter" type="checkbox" id="dinsdag" value="dinsdag" onchange="filterSelection(value)">
+                    </label>
+                    <label for="woensdag">Woensdag
+                        <input class="filter" type="checkbox" id="woensdag" value="woensdag" onchange="filterSelection(value)">
+                    </label>
+                    <label for="donderdag">Donderdag
+                        <input class="filter" type="checkbox" id="donderdag" value="donderdag" onchange="filterSelection(value)">
+                    </label>
+                    <label for="vrijdag">Vrijdag
+                        <input class="filter" type="checkbox" id="vrijdag" value="vrijdag" onchange="filterSelection(value)">
+                    </label>
+                    <label for="zaterdag">Zaterdag
+                        <input class="filter" type="checkbox" id="zaterdag" value="zaterdag" onchange="filterSelection(value)">
+                    </label>
+                    <label for="zondag">Zondag
+                        <input class="filter" type="checkbox" id="zondag" value="zondag" onchange="filterSelection(value)">
+                    </label>
+                </div>
+        </div>
+    </div>
+    <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Leeftijd</button>
+            <div class="dropdown-menu information-grid">
+                <div class="dropdown-links">
+                    <label for="1-3">1-3 jaar
+                        <input class="filter" type="checkbox" id="1-3" value="1-3" onchange="filterSelection(value)">
+                    </label>
+                    <label for="4-6">4-6 jaar
+                        <input class="filter" type="checkbox" id="4-6" value="4-6" onchange="filterSelection(value)">
+                    </label>
+                    <label for="7-12">7-12 jaar
+                        <input class="filter" type="checkbox" id="7-12" value="7-12" onchange="filterSelection(value)">
+                    </label>
+                    <label for="13-18">13-18 jaar
+                        <input class="filter" type="checkbox" id="13-18" value="13-18" onchange="filterSelection(value)">
+                    </label>
+                    <label for="19-69">19-69 jaar
+                        <input class="filter" type="checkbox" id="19-69" value="19-69" onchange="filterSelection(value)">
+                    </label>
+                    <label for="70">70+ jaar
+                        <input class="filter" type="checkbox" id="70" value="70" onchange="filterSelection(value)">
+                    </label>
+                </div>
+        </div>
+    </div>
+    <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Aantal lessen</button>
+            <div class="dropdown-menu information-grid">
+                <div class="dropdown-links">
+                    <label for="1">1 les
+                        <input class="filter" type="checkbox" id="1" value="1" onchange="filterSelection(value)">
+                    </label>
+                    <label for="2-5">2-5 jaar
+                        <input class="filter" type="checkbox" id="2-5" value="2-5" onchange="filterSelection(value)">
+                    </label>
+                    <label for="6-10">6-10 jaar
+                        <input class="filter" type="checkbox" id="6-10" value="6-10" onchange="filterSelection(value)">
+                    </label>
+                    <label for="11-15">11-15 jaar
+                        <input class="filter" type="checkbox" id="11-15" value="11-15" onchange="filterSelection(value)">
+                    </label>
+                    <label for="16">16 lessen of meer
+                        <input class="filter" type="checkbox" id="16" value="16" onchange="filterSelection(value)">
+                    </label>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Sport blokken -->
+<div class="parent">
+    <div class="filter badminton sport">
+        <img class="activity-image" src="/assets/timthumb (1).jpg">
+        
+        <p>Badminton</p>
+    </div>
+    <div class="filter ballet sport">
+        <img class="activity-image" src="/assets/timthumb (1).png">
+        
+        <p>Ballet</p>
+    </div>
+    <div class="filter dance sport">
+        <img class="activity-image" src="/assets/timthumb (2).jpg">
+        
+        <p>Dance</p>
+    </div>
+    <div class="filter fitness sport">
+        <img class="activity-image" src="/assets/timthumb (2).png">
+        
+        <p>Fitness</p>
+    </div>
+    <div class="filter badminton sport">
+        <img class="activity-image" src="/assets/timthumb (3).jpg">
+        
+        <p>Badminton</p>
+    </div>
+    <div class="filter badminton sport">
+        <img class="activity-image" src="/assets/timthumb (3).png">
+        
+        <p>Badminton</p>
+    </div>
+    <div class="filter badminton sport">
+        <img src="assets/logo.jpg">
+        
+        <p>Badminton</p>
+    </div>
+    <div class="filter ballet sport">
+        <img src="assets/logo.jpg">
+        
+        <p>Ballet</p>
+    </div>
+    <div class="filter ballet sport">
+        <img src="assets/logo.jpg">
+        
+        <p>Ballet</p>
+    </div>
+    <div class="filter ballet sport">
+        <img src="assets/logo.jpg">
+        
+        <p>Ballet</p>
+    </div>
+    <div class="filter dance sport">
+        <img src="assets/logo.jpg">
+        
+        <p>Dance</p>
+    </div>
+    <div class="filter dance sport">
+        <img src="assets/logo.jpg">
+        
+        <p>Dance</p>
+    </div>
+    <div class="filter dance sport">
+        <img src="assets/logo.jpg">
+        
+        <p>Dance</p>
+    </div>
+    <div class="filter volleybal sport">
+        <img src="assets/logo.jpg">
+        
+        <p>Volleybal</p>
+    </div>
+    <div class="filter wandelsport sport">
+        <img src="assets/logo.jpg">
+        
+        <p>Wandelsport</p>
+    </div>
+    <div class="filter yoga sport">
+        <img src="assets/logo.jpg">
+        
+        <p>Yoga</p>
+    </div>
+    <div class="filter zaalvoetbal sport">
+        <img src="assets/logo.jpg">
+        
+        <p>Zaalvoetbal</p>
+    </div>
+    <div class="filter zwem sport">
+        <img src="assets/logo.jpg">
+        
+        <p>Zwemmen</p>
+    </div>
+</div>
+
+   
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<div class="footer">
+    
+    <div class="contact">
+        <h2>Contact</h2>
+        <p>email@gmail.com<br>
+        038 339 2981<br>
+        info@gmail.com<br><br>
+        Burgemeester Berghuisplein 1<br>
+        8261 DD Kampen
+        </p>
+    </div>
+    <div>
+        <div class="informatie">
+            <h2 class="informatie">Meer informatie op</h2>
+            <a href="https://jeugdfondssportencultuur.nl/fondsen/overijssel/">
+                <img class="informatie" src="assets/logo2.png" alt="Jeugd Fonds Sport & Cultuur">
+            </a>
+            <a href="https://sportservicekampen.nl/gezonde-leefstijl/">
+                <img class="informatie-white" src="assets/logo3.png" alt="Jongeren op Gezond Gewicht">
+            </a>    
+            <a href="https://www.cool2bfit.nl/locaties/51/kampen/">
+                <img class="informatie2" src="assets/logo4.png" alt="Cool2BFit">
+            </a>
+         </div>
+    </div>
+    <div class="social">
+        <h2 class="informatie">Volg ons op</h2>
+         <a href="https://www.youtube.com/channel/UCWyYr9t17obSFAXkfa1VVCA">
+            <img class= "social" src="assets/youtube.png" alt="Link naar Youtube kanaal Heel Kampen Beweegt">
+        </a>
+        <a href="https://www.instagram.com/heelkampenbeweegt/">
+            <img class="social" src="assets/instagram.png" alt="Link naar Instagram pagina Heel Kampen Beweegt">
+        </a>
+        <a href="https://www.facebook.com/HeelKampenBeweegt/">
+            <img type="button" class="social" src="assets/facebook.png" alt="Link naar Facebook pagina Heel Kampen Beweegt">
+        </a>
+    </div>
+</div>
+<div class="dark-gray"></div>
+
+</body>
+
+
+
